@@ -1,0 +1,59 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 2em;
+}
+
+#container {
+  width: 80%; 
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+  text-align: center;
+}
+
+.headerlink {
+  width: 20%;
+  text-align: center;
+}
+
+.headernavigation {
+  display: flex;
+  justify-content: center;
+}
+
+.mainsection {
+  display: flex;
+  margin-top: 40px;
+}
+
+.mainsection main {
+  width: 70%;
+}
+
+.mainsection aside {
+  width: 30%;
+  margin-left: 40px;
+  padding-left: 30px;
+  background-color: #e1e1e1;
+}
+
+@media (max-width: 640px) {
+  
+  body {
+    color: red;
+  }
+  
+  .mainsection {
+    display: block;  /* remove flex box for small screens */
+  }
+  
+}
